@@ -1,0 +1,44 @@
+.outline {
+	border: 1px solid black;
+	border-radius:25px;;
+	width: 200px; 
+	text-align: center; 
+	padding: 10px; 
+	margin: 10px; 
+	background: #FFF; 
+	color: #cc0033;
+	 }
+
+
+span { 
+	display: block; 
+	padding-right: 0.15em;
+	padding-left: 0.15em;
+}
+
+.top { 
+	text-align: left; 
+	align-items: flex-start;
+	}
+
+.top img {
+	width: 1em;
+	max-width: 100%;
+}
+.bottom { 
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column-reverse;
+	text-align: right; 
+	}
+
+.bottom img {
+	width: 1em;
+	max-width: 100%;
+	transform: rotate(180deg);
+}
+
+.bottom span {
+	transform: rotate(180deg);
+}
+
