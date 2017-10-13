@@ -7,16 +7,9 @@
 	margin: 10px; 
 	background: #FFF; 
 	color: #cc0033;
-<<<<<<< HEAD
-	transform: scale(0.4, 0.4);
-	position: absolute;
-	
-	
-=======
 	height: 350px;
 	transform: scale(0.4, 0.4);
 	position: absolute;
->>>>>>> a8069292c3abaa034d07143fa55f33601181520c
 	 }
 
 span { 
@@ -51,14 +44,11 @@ span {
 	transform: rotate(180deg);
 }
 
-<<<<<<< HEAD
-=======
 
 .spacing {
 	height: 263px;
 }
 
->>>>>>> a8069292c3abaa034d07143fa55f33601181520c
 body{
 	background: rgb(2, 83, 2);	
 }
@@ -122,8 +112,4 @@ body{
 		right:10px;
 		bottom: 10px;
 		
-<<<<<<< HEAD
 	}
-=======
-	}
->>>>>>> a8069292c3abaa034d07143fa55f33601181520c
