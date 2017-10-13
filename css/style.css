@@ -10,7 +10,12 @@
 	height: 350px;
 	transform: scale(0.4, 0.4);
 	position: absolute;
+	top:-100px;
+	left: -70px;
 	 }
+
+
+
 
 span { 
 	display: block; 
@@ -96,8 +101,8 @@ body{
 		text-align: center;	
 	}
 	
-.deck {
-		position: fixed;		
+.cards {
+		position: relative;		
 		border: 1px solid black;
 		border-radius:25px;
 		width:100px; 

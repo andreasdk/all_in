@@ -4,6 +4,7 @@ namespace blackjack;
 
 require('card.php');
 
+
 // card faces array
 	$suits = array(
 	"Clubs","Diamonds", "Hearts", "Spades"
@@ -36,12 +37,45 @@ shuffle($deck);
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div id="deck">
-    <?php
-    foreach($deck as $card){
+
+
+<div class="score">
+		score: 200$
+	</div>
+
+	<div class="house">
+
+		House
+
+	</div>
+
+
+	<div class="player">
+
+		Player
+
+	</div>
+
+	<div class="cards">
+
+		<div id="deck">
+    	<?php
+   	 foreach($deck as $card){
         echo $card;
-    }
-    ?>
-</div>
+    	}
+   	 	?>
+    	</div>
+
+	</div>
+
+
+	<div class="buttons">
+		<button class="button" id="btn1" >Start game</button>
+		<button class="button" id="btn2">Hit</button>
+		<button class="button" id="btn3">Stand</button>
+		</div>
+
+
+	
 </body>
 </html>
