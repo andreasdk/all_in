@@ -39,7 +39,7 @@ shuffle($deck);
 <body>
 
 
-<div class="score">
+<div class="score" id="scr">
 		score: 200$
 	</div>
 
@@ -74,6 +74,132 @@ shuffle($deck);
 		<button class="button" id="btn2">Hit</button>
 		<button class="button" id="btn3">Stand</button>
 		</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
+
+
+<script>
+	var player = 0
+	var house = 0
+	
+
+
+        $("#btn1").click(function(){
+			var card = $('#deck .card1').last()
+            card.detach().appendTo('.player')
+			var value = card.data('value')
+			if(value=='A'){
+				player=player + 11
+			}else if(value=='K'|value=='Q'|value=='J'){
+				player = player + 10
+				}else{
+					player= value + player
+				}		
+			
+		   console.log(player)
+		   score()
+		   
+			var card = $('#deck .card1').last()
+			card.detach().appendTo('.house')
+			var value = card.data('value')
+			if(value=='A'){
+				house=house + 11
+			}else if(value=='K'|value=='Q'|value=='J'){
+				house = house + 10
+				}else{
+					house= value + house
+				}		
+
+			console.log(house)
+			score()
+
+			var card = $('#deck .card1').last()
+			card.detach().appendTo('.player')
+			var value = card.data('value')
+
+			if(value=='A'){
+				player=player + 11
+			}else if(value=='K'|value=='Q'|value=='J'){
+				player = player + 10
+				}else{
+					player= value + player
+				}		
+			console.log(player)
+			score()
+
+			var card = $('#deck .card1').last()
+			card.detach().appendTo('.house')
+			var value = card.data('value')
+			if(value=='A'){
+				house=house + 11
+			}else if(value=='K'|value=='Q'|value=='J'){
+				house = house + 10
+				}else{
+					house= value + house
+				}		
+
+			console.log(house)
+			score()
+
+
+
+        }); 
+
+		$("#btn2").click(function(){
+			var card = $('#deck .card1').last()
+			var value = card.data('value')
+			card.detach().appendTo('.player')
+
+			if(value=='A'){
+				player=player + 11
+			}else if(value=='K'|value=='Q'|value=='J'){
+				player = player + 10
+				}else{
+					player= value + player
+				}		
+			console.log(player)
+			score()
+
+
+			
+        })
+          
+		$("#btn3").click(function(){
+			var card = $('#deck .card1').last()
+			var value = card.data('value')
+			card.detach().appendTo('.house')
+			if(value=='A'){
+				house=house + 11
+			}else if(value=='K'|value=='Q'|value=='J'){
+				house = house + 10
+				}else{
+					house= value + house
+				}		
+
+			console.log(house)
+			score()
+
+
+			
+        })
+
+function score(){
+
+	if (player > 21){
+				alert('house wins!');
+			}else if(house >21){
+				alert('you win');
+				}
+				else if(player == 21){
+					alert('you win!');
+				}else if(house == 21){
+					alert('house wins!');
+				}
+}
+</script>
 
 
 	
